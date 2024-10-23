@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns"
+    ],
+    "paths": {
+      "~/*": [
+        "./app/*"
+      ]
+    },
+    "strict": true,
+    "types": [
+      "@remix-run/deno",
+      "vite/client"
+    ]
+  },
+  "exclude": [
+    ".github/",
+    ".vscode/",
+    "build/"
+  ],
+  "imports": {
+    "~/": "./app/"
+  },
+  "nodeModulesDir": "auto"
+}

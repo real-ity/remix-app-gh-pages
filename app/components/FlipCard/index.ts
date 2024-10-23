@@ -1,6 +1,6 @@
-import FlipCard from "./FlipCard";
-import FrontCard from "./FrontCard";
-import BackCard from "./BackCard";
+import BackCard from "./BackCard.tsx";
+import FlipCard from "./FlipCard.tsx";
+import FrontCard from "./FrontCard.tsx";
 
-export { FlipCard, FrontCard, BackCard };
+export { BackCard, FlipCard, FrontCard };
 export default FlipCard;

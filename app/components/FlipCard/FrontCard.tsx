@@ -42,9 +42,10 @@ export default function FrontCard(props: { children?: React.ReactNode }) {
           <Typography className="card-description-3" gutterBottom></Typography>
         </Stack>
       </Grid>
-      {React.Children.map(props?.children, (child) => (
-        <Grid item>{child}</Grid>
-      ))}
+      {React.Children.map(
+        props?.children,
+        (child) => <Grid item>{child}</Grid>,
+      )}
     </>
   );
 }

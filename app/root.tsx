@@ -2,7 +2,7 @@ import type {
   LinksFunction,
   LoaderFunctionArgs,
   SerializeFrom,
-} from "@remix-run/node";
+} from "@remix-run/deno";
 import {
   json,
   Links,
@@ -13,9 +13,9 @@ import {
   useLoaderData,
   useMatches,
 } from "@remix-run/react";
-import { PopupLoader } from "~/components/Loading";
-import Content from "~/sections/Layout";
-import { getMuiLinks, MuiDocument, MuiMeta } from "~/theme";
+import { PopupLoader } from "~/components/Loading.tsx";
+import Content from "~/sections/Layout.tsx";
+import { getMuiLinks, MuiDocument, MuiMeta } from "~/theme/index.ts";
 
 export const links: LinksFunction = () => [...getMuiLinks()];
 

@@ -1,9 +1,10 @@
 import { vitePlugin as remix } from "@remix-run/dev";
+import { copyFileSync } from "node:fs";
+import { join } from "node:path";
+import process from "node:process";
 import { remixDevTools } from "remix-development-tools";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { copyFileSync } from "node:fs";
-import { join } from "node:path";
 
 export default defineConfig({
   ...(process.env.NODE_ENV === "production" && {
@@ -41,7 +42,8 @@ export default defineConfig({
         v3_throwAbortReason: true,
       },
     }),
-    tsconfigPaths(),
+    tsconfigPaths({
+      configNames: ["deno.json"],
+    }),
   ],
 });
-

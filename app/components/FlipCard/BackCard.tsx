@@ -16,9 +16,10 @@ export default function BackCard(props: { children?: React.ReactNode }) {
       {/* {parse(description ?? "", options)} */}
       Test2
       {props.children &&
-        React.Children.map(props.children, (child) => (
-          <Grid item>{child}</Grid>
-        ))}
+        React.Children.map(
+          props.children,
+          (child) => <Grid item>{child}</Grid>,
+        )}
     </Stack>
   );
 }
