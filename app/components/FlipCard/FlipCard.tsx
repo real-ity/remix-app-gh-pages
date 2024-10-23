@@ -37,7 +37,9 @@ export default function FlipCard({
           </CardSide>
         </Card>
         <Card
-          className={`flip-card__side flip-card__side--back${switched ? " is-active" : ""}`}
+          className={`flip-card__side flip-card__side--back${
+            switched ? " is-active" : ""
+          }`}
         >
           <CardSide {...{ switched, setSwitched, hidden: !switched, ...props }}>
             {Back ?? <></>}

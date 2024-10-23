@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   ExpandMore as ExpandMoreIcon,
   Favorite as FavoriteIcon,
@@ -36,8 +34,8 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import { Link as RouterLink } from "@remix-run/react";
 import { useState } from "react";
-import Carousel from "~/components/Carousel";
-import FlipCard, { BackCard, FrontCard } from "~/components/FlipCard";
+import Carousel from "~/components/Carousel.tsx";
+import FlipCard, { BackCard, FrontCard } from "~/components/FlipCard/index.ts";
 
 function AddressForm() {
   const [age, setAge] = useState("");

@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { IconButton, Stack } from "@mui/material";
@@ -83,7 +82,9 @@ export default function Carousel({ limit = 1, children }: CarouselProps) {
         {children &&
           React.Children.toArray(children)
             .slice(pageStartIndex, pageStartIndex + limit)
-            .map((child) => child)}
+            .map((child) =>
+              child
+            )}
       </Stack>
       <Next />
     </Stack>

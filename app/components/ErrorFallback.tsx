@@ -18,8 +18,8 @@ export default function ErrorFallback({ error }: ErrorFallbackProps) {
           {isRouteErrorResponse(error)
             ? error.data.message ?? error.data
             : error instanceof Error
-              ? error.message
-              : "An Unknown error ocurred"}
+            ? error.message
+            : "An Unknown error ocurred"}
         </Typography>
       </Stack>
     </Box>

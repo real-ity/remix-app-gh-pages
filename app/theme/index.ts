@@ -1,7 +1,7 @@
-import theme from "./theme";
-import { MuiDocument } from "./MuiDocument";
-import { MuiMeta } from "./MuiMeta";
-import { MuiProvider } from "./MuiProvider";
-import { getMuiLinks } from "./getMuiLinks";
+import { MuiDocument } from "./MuiDocument.tsx";
+import { MuiMeta } from "./MuiMeta.tsx";
+import { MuiProvider } from "./MuiProvider.tsx";
+import { getMuiLinks } from "./getMuiLinks.ts";
+import theme from "./theme.ts";
 
 export { getMuiLinks, MuiDocument, MuiMeta, MuiProvider, theme };
