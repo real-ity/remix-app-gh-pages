@@ -10,6 +10,9 @@
     "paths": {
       "~/*": [
         "./app/*"
+      ],
+      "~/theme": [
+        "./app/theme/index.ts"
       ]
     },
     "strict": true,
@@ -24,7 +27,8 @@
     "build/"
   ],
   "imports": {
-    "~/": "./app/"
+    "~/": "./app/",
+    "~/theme": "./app/theme/index.ts"
   },
   "nodeModulesDir": "auto"
 }

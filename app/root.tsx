@@ -15,7 +15,7 @@ import {
 } from "@remix-run/react";
 import { PopupLoader } from "~/components/Loading.tsx";
 import Content from "~/sections/Layout.tsx";
-import { getMuiLinks, MuiDocument, MuiMeta } from "~/theme/index.ts";
+import { getMuiLinks, MuiDocument, MuiMeta } from "~/theme";
 
 export const links: LinksFunction = () => [...getMuiLinks()];
 

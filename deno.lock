@@ -7,6 +7,7 @@
     "npm:@mui/icons-material@~5.16.7": "5.16.7_@mui+material@5.16.7__@emotion+react@11.13.3___react@18.3.1__@emotion+styled@11.13.0___@emotion+react@11.13.3____react@18.3.1___react@18.3.1__@types+react@18.3.12__react@18.3.1__react-dom@18.3.1___react@18.3.1_@types+react@18.3.12_react@18.3.1_@emotion+react@11.13.3__react@18.3.1_@emotion+styled@11.13.0__@emotion+react@11.13.3___react@18.3.1__react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@mui/material@~5.16.7": "5.16.7_@emotion+react@11.13.3__react@18.3.1_@emotion+styled@11.13.0__@emotion+react@11.13.3___react@18.3.1__react@18.3.1_@types+react@18.3.12_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@remix-run/deno@^2.13.1": "2.13.1_typescript@5.6.3",
+    "npm:@remix-run/dev@2.13.1": "2.13.1_@remix-run+react@2.13.1__react@18.3.1__react-dom@18.3.1___react@18.3.1__typescript@5.6.3_typescript@5.6.3_vite@5.4.10__sass@1.80.3_@babel+core@7.25.9_react@18.3.1_react-dom@18.3.1__react@18.3.1_esbuild@0.17.6_postcss@8.4.47_sass@1.80.3",
     "npm:@remix-run/dev@^2.13.1": "2.13.1_@remix-run+react@2.13.1__react@18.3.1__react-dom@18.3.1___react@18.3.1__typescript@5.6.3_typescript@5.6.3_vite@5.4.10__sass@1.80.3_@babel+core@7.25.9_react@18.3.1_react-dom@18.3.1__react@18.3.1_esbuild@0.17.6_postcss@8.4.47_sass@1.80.3",
     "npm:@remix-run/react@^2.13.1": "2.13.1_react@18.3.1_react-dom@18.3.1__react@18.3.1_typescript@5.6.3",
     "npm:@types/react-dom@^18.3.1": "18.3.1",
