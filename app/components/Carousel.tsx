@@ -53,18 +53,19 @@ export default function Carousel({ limit = 1, children }: CarouselProps) {
         />
       );
 
-      if (type === "previous")
+      if (type === "previous") {
         result.Previous = () => (
           <Button {...items[i]}>
             <KeyboardArrowLeftIcon />
           </Button>
         );
-      else if (type === "next")
+      } else if (type === "next") {
         result.Next = () => (
           <Button {...items[i]}>
             <KeyboardArrowRightIcon />
           </Button>
         );
+      }
       return result;
     },
     { Previous: () => <></>, Next: () => <></> },
