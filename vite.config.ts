@@ -16,7 +16,7 @@ export default defineConfig({
     remix({
       ssr: false,
       ignoredRouteFiles: ["**/*.css"],
-      basename: "/my-remix-app-spa/",
+      basename: "/remix-app-gh-pages/",
       buildEnd(args) {
         if (!args.viteConfig.isProduction) return;
 
