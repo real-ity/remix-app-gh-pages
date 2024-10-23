@@ -11,6 +11,7 @@ export default defineConfig({
       noExternal: ["@mui/*"],
     },
   }),
+  base: "/remix-app-gh-pages/",
   plugins: [
     remixDevTools(),
     remix({
