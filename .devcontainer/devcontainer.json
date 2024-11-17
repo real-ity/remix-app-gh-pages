@@ -1,0 +1,46 @@
+{
+	"name": "Deno",
+	// "image": "ghcr.io/real-ity/devcontainers-templates/deno",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "deno install",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"antfu.vite",
+				"bradlc.vscode-tailwindcss",
+				"codeforge.remix-forge",
+				"codezombiech.gitignore",
+				"christian-kohler.path-intellisense",
+				"davidanson.vscode-markdownlint",
+				"denoland.vscode-deno",
+				"donjayamanne.githistory",
+				"dotjoshjohnson.xml",
+				"eamodio.gitlens",
+				"foxundermoon.shell-format",
+				"github.vscode-github-actions",
+				"hartmann.bash-ide-vscode",
+				"mhutchie.git-graph",
+				"mikestead.dotenv",
+				"ms-vscode.vscode-typescript-next",
+				"redhat.vscode-xml",
+				"redhat.vscode-yaml",
+				"tombonnike.vscode-status-bar-format-toggle",
+				"syler.sass-indented",
+				"unifiedjs.vscode-mdx",
+				"xabikos.reactsnippets",
+				"yoavbls.pretty-ts-errors",
+				"yzhang.markdown-all-in-one"
+			]
+		}
+	},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
