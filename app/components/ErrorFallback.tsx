@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { isRouteErrorResponse } from "@remix-run/react";
+import { isRouteErrorResponse } from "react-router";
 
-import type { ErrorResponse } from "@remix-run/react";
+import type { ErrorResponse } from "react-router";
 
 type ErrorFallbackProps = {
   error: ErrorResponse | Error | unknown;
