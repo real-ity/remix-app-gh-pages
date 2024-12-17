@@ -1,8 +1,7 @@
 import type {
   LinksFunction,
   LoaderFunctionArgs,
-  SerializeFrom,
-} from "@react-router/deno";
+} from "react-router";
 import {
   Links,
   Meta,
@@ -15,6 +14,8 @@ import {
 import { PopupLoader } from "~/components/Loading.tsx";
 import Content from "~/sections/Layout.tsx";
 import { getMuiLinks, MuiDocument, MuiMeta } from "~/theme";
+
+type SerializeFrom<T> = ReturnType<typeof useLoaderData<T>>;
 
 export const links: LinksFunction = () => [...getMuiLinks()];
 
