@@ -1,8 +1,8 @@
-import type { LoaderFunctionArgs } from "@remix-run/deno";
-import { useRouteError } from "@remix-run/react";
+import { ClientLoaderFunctionArgs } from "npm:react-router@^7.0.2";
+import { useRouteError } from "react-router";
 import ErrorFallback from "~/components/ErrorFallback.tsx";
 
-export async function clientLoader({ request }: LoaderFunctionArgs) {
+export async function clientLoader({ request }: ClientLoaderFunctionArgs) {
   throw new Response(`${new URL(request.url).pathname} Not Found`, {
     status: 404,
   });

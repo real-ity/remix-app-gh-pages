@@ -9,7 +9,8 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
-    groups:
-      dev-dependencies:
-        patterns: 
-          - "*"
+    open-pull-requests-limit: 2
+    assignees:
+      - "dependabot"
+    allow:
+      - dependency-type: "all"

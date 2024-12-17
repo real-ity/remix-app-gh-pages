@@ -17,7 +17,7 @@
     },
     "strict": true,
     "types": [
-      "@remix-run/deno",
+      "@react-router/node",
       "vite/client"
     ]
   },
@@ -26,6 +26,15 @@
     ".github/",
     ".vscode/",
     "build/"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/.server/**/*.ts",
+    "**/.server/**/*.tsx",
+    "**/.client/**/*.ts",
+    "**/.client/**/*.tsx",
+    ".react-router/types/**/*"
   ],
   "imports": {
     "~/": "./app/",

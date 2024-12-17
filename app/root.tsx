@@ -2,9 +2,8 @@ import type {
   LinksFunction,
   LoaderFunctionArgs,
   SerializeFrom,
-} from "@remix-run/deno";
+} from "@react-router/deno";
 import {
-  json,
   Links,
   Meta,
   Outlet,
@@ -12,7 +11,7 @@ import {
   ScrollRestoration,
   useLoaderData,
   useMatches,
-} from "@remix-run/react";
+} from "react-router";
 import { PopupLoader } from "~/components/Loading.tsx";
 import Content from "~/sections/Layout.tsx";
 import { getMuiLinks, MuiDocument, MuiMeta } from "~/theme";
@@ -26,7 +25,7 @@ export const useRootLoaderData = () => {
 
 export async function clientLoader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url);
-  return json({ url });
+  return { url };
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
