@@ -1,7 +1,4 @@
-import type {
-  LinksFunction,
-  LoaderFunctionArgs
-} from "react-router";
+import type { LinksFunction, LoaderFunctionArgs } from "react-router";
 import {
   Links,
   Meta,
