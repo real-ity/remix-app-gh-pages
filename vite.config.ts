@@ -11,6 +11,7 @@ export default defineConfig({
   plugins: [
     reactRouterDevTools(),
     reactRouter(),
-    tsconfigPaths({ configNames: ["deno.json"] }),
+    tsconfigPaths(),
+    // tsconfigPaths({ configNames: ["deno.json"] }),
   ],
 });
