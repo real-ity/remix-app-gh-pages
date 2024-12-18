@@ -14,8 +14,8 @@ export default function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
-  routerContext: EntryContext,
-  // loadContext: AppLoadContext,
+  routerContext: EntryContext
+  // loadContext: AppLoadContext
 ) {
   return new Promise((resolve, reject) => {
     let shellRendered = false;
@@ -48,7 +48,7 @@ export default function handleRequest(
             new Response(stream, {
               headers: responseHeaders,
               status: responseStatusCode,
-            }),
+            })
           );
 
           pipe(body);
@@ -65,7 +65,7 @@ export default function handleRequest(
             console.error(error);
           }
         },
-      },
+      }
     );
 
     setTimeout(abort, ABORT_DELAY);
