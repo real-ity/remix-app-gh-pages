@@ -1,5 +1,5 @@
 import { Box, Link, List, Typography } from "@mui/material";
-import type { MetaFunction } from "@react-router/deno";
+import type { MetaFunction } from "react-router";
 
 export const meta: MetaFunction = () => [
   { title: "New Remix SPA" },

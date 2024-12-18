@@ -1,8 +1,9 @@
-import { ClientLoaderFunctionArgs } from "npm:react-router@^7.0.2";
 import { useRouteError } from "react-router";
 import ErrorFallback from "~/components/ErrorFallback.tsx";
 
-export async function clientLoader({ request }: ClientLoaderFunctionArgs) {
+import { Route } from "../../.react-router/types/app/routes/+types/$.ts";
+
+export async function clientLoader({ request }: Route.ClientLoaderArgs) {
   throw new Response(`${new URL(request.url).pathname} Not Found`, {
     status: 404,
   });

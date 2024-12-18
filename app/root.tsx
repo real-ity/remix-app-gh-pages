@@ -1,6 +1,6 @@
 import type {
   LinksFunction,
-  LoaderFunctionArgs,
+  LoaderFunctionArgs
 } from "react-router";
 import {
   Links,

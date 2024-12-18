@@ -35,7 +35,7 @@ jobs:
           deno-version: v2.0.2
       - name: Install and Build 🔧
         run: |
-          deno install
+          deno install --allow-scripts
           deno fmt --check
           deno task build
       - name: Setup Pages
